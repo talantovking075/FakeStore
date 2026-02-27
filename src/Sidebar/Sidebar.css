@@ -1,0 +1,100 @@
+:root {
+  --bg-dark: #001529; /* To'q ko'k navy */
+  --item-hover: #1890ff;
+  --text-white: #ffffff;
+}
+.nav-item {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-item.active {
+  background-color: #1890ff;
+  color: white;
+}
+.logout-btn {
+  margin-top: auto; 
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background-color: rgba(244, 63, 94, 0.1); /* Judayam och qizil fona */
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.logout-btn:hover {
+  background-color: #e11d48; 
+  color: white;
+  border-color: #e11d48;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+  transform: translateY(-2px); 
+}
+
+.logout-btn:active {
+  transform: scale(0.95); 
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 100vh;
+  background: var(--bg-dark);
+  color: white;
+  padding: 20px 0;
+  gap: 20px;
+  position: fixed;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #304156;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  outline: none;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover, .nav-item.active {
+  background: var(--item-hover);
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
